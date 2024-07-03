@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { HiMenuAlt2 } from "react-icons/hi";
 
+
+
 const pages = ["home", "about", "features", "pricing", "contact"];
 
 export default function Nav() {
