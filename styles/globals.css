@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark-primary: #05010d;
+  --button-gradient: linear-gradient(90deg, #423f87 0%, #a725bc 100%);
+  --text-gradient: -webkit-linear-gradient(360deg, #423f87, #a725bc, #a725bc);
+  --border-gradient: linear-gradient(to left, #423f87, #a725bc);
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #423f87 0%, #a725bc 100%);
+}
+
+.border-gradient {
+  position: relative;
+  box-sizing: border-box;
+
+  --border: 1px;
+  color: #fff;
+  background: #000;
+  background-clip: padding-box !important;
+  border: solid var(--border) transparent !important;
+  border-radius: 1em;
+}
+
+.border-gradient:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: calc(-1 * var(--border)) !important;
+  border-radius: inherit !important;
+  background: var(--border-gradient);
+}
+
+.text-gradient {
+  background: var(--text-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-shadow {
+  box-shadow: 0 3px 6px 0 #423f87;
+}
+
+.container-center {
+  @apply w-[90%] max-w-[1100px] mx-auto;
+}
+
+.media-scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 80%;
+  gap: 1rem;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+
+  /* scroll-snap-type: inline mandatory; */
+}
+
+.mask-gradient {
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 10%,
+    #a725bc 90%,
+    transparent
+  );
+  mask: linear-gradient(
+    90deg,
+    transparent,
+    white 10%,
+    #a725bc 90%,
+    transparent
+  );
+}
+
+.media-scroller::-webkit-scrollbar {
+  width: 0;
+}

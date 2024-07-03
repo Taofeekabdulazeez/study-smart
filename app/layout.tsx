@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Inter, Bruno_Ace } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-const brunoAce = Bruno_Ace({ subsets: ["latin"], weight: "400" });
+const brunoAce = Bruno_Ace({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={brunoAce.className}>{children}</body>
+      <body className={`${brunoAce.className} bg-dark-primary text-white`}>
+        {children}
+      </body>
     </html>
   );
 }
