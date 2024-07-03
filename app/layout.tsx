@@ -20,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${brunoAce.className} bg-dark-primary text-white`}>
+      <body
+        className={`${brunoAce.className} bg-dark-primary text-white overflow-x-hidden`}
+      >
         {children}
       </body>
     </html>
