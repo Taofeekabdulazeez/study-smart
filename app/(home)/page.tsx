@@ -9,7 +9,7 @@ import SectionTestimonials from "@/components/pages/home/section-testimonial";
 
 export default function Home() {
   return (
-    <div className="">
+    <>
       <Header />
       <SectionHero />
       <SectionFeatures />
@@ -18,6 +18,6 @@ export default function Home() {
       <SectionTestimonials />
       <SectionCTA />
       <Footer />
-    </div>
+    </>
   );
 }
