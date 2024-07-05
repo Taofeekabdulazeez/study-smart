@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="py-10">
+    <div className="py-12">
       <div className="text-center space-y-2 mb-6">
         <h3 className="text-2xl">Welcome to STUDY SMART</h3>
         <p className="text-lg">{`Ready to Dive Back In? Let's Get Learning!`}</p>
