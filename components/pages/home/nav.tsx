@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { HiMenuAlt2 } from "react-icons/hi";
 
-
-
 const pages = ["home", "about", "features", "pricing", "contact"];
 
 export default function Nav() {
@@ -23,10 +21,15 @@ export default function Nav() {
           ))}
         </ul>
         <div className="flex items-center gap-4">
-          <button className="font-medium text-xs">Login</button>
-          <button className="font-medium text-xs btn-gradient px-4 py-2 rounded-lg">
+          <Link href="/login" className="font-medium text-xs">
+            Login
+          </Link>
+          <Link
+            href="/sign-up"
+            className="font-medium text-xs btn-gradient px-4 py-2 rounded-lg"
+          >
             Sign up
-          </button>
+          </Link>
         </div>
       </nav>
     </>

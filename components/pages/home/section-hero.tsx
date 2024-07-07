@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
 import hero_image from "@/public/hero-img.png";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function SectionHero() {
+  const router = useRouter();
   return (
     <section className="py-16">
       <div className="container-center">
@@ -15,7 +18,10 @@ export default function SectionHero() {
             Personalized AI-Generated Study Resources and Tailored Assessments
             for Students
           </p>
-          <button className="btn-gradient px-6 py-3 font-semibold rounded-xl">
+          <button
+            onClick={() => router.push("/sign-up")}
+            className="btn-gradient px-6 py-3 font-semibold rounded-xl"
+          >
             Create account
           </button>
         </div>
