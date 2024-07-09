@@ -85,3 +85,7 @@
 .media-scroller::-webkit-scrollbar {
   width: 0;
 }
+
+.tangent {
+  list-style: none;
+}
