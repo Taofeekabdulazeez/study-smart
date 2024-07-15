@@ -4,7 +4,7 @@ type CallBackFn = (...args: any[]) => any;
 
 function useInterval(callback: CallBackFn, delay: number) {
   const savedCallback = useRef<CallBackFn | null>(null);
-  console.log(savedCallback)
+  console.log(savedCallback);
 
   useEffect(() => {
     savedCallback.current = callback;
@@ -36,3 +36,5 @@ export function useTimer(options: timerOptions = defaultOptions) {
 
   return count;
 }
+
+const x = () => "Hello, world";
