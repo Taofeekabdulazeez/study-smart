@@ -10,7 +10,7 @@ export const faqs = [
       "Selecting a category is simple. After logging in, navigate to the 'Categories' section from the main menu. Browse through the available categories and choose the one that interests you.",
   },
   {
-    question: "Ask Question",
+    question: "Ask a Question",
     answer:
       "To ask a question, go to the 'Ask a Question' section from the main menu. Enter your question details, choose the relevant category, and click 'Submit'. Our community and experts will provide answers shortly.",
   },
